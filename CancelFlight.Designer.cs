@@ -34,7 +34,6 @@
             label1 = new Label();
             panel2 = new Panel();
             button4 = new Button();
-            button7 = new Button();
             button6 = new Button();
             button5 = new Button();
             button3 = new Button();
@@ -44,10 +43,10 @@
             label19 = new Label();
             pictureBox3 = new PictureBox();
             FlightIdTextBox = new TextBox();
+            button9 = new Button();
             label9 = new Label();
             label7 = new Label();
             label3 = new Label();
-            button9 = new Button();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -101,7 +100,6 @@
             // 
             panel2.BackColor = Color.FromArgb(81, 90, 90);
             panel2.Controls.Add(button4);
-            panel2.Controls.Add(button7);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(button3);
@@ -128,21 +126,6 @@
             button4.Text = "CANCEL FLIGHTS";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
-            // 
-            // button7
-            // 
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(0, 389);
-            button7.Margin = new Padding(3, 4, 3, 4);
-            button7.Name = "button7";
-            button7.Size = new Size(229, 80);
-            button7.TabIndex = 6;
-            button7.Text = "ADD ADMIN";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -272,6 +255,22 @@
             FlightIdTextBox.TabIndex = 95;
             FlightIdTextBox.TextAlign = HorizontalAlignment.Center;
             // 
+            // button9
+            // 
+            button9.BackColor = Color.White;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button9.ForeColor = Color.FromArgb(99, 57, 116);
+            button9.Location = new Point(250, 433);
+            button9.Margin = new Padding(3, 4, 3, 4);
+            button9.Name = "button9";
+            button9.Size = new Size(207, 51);
+            button9.TabIndex = 88;
+            button9.Text = "REMOVE FLIGHT";
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
+            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -305,22 +304,6 @@
             label3.Size = new Size(124, 32);
             label3.TabIndex = 1;
             label3.Text = "FLIGHT ID";
-            // 
-            // button9
-            // 
-            button9.BackColor = Color.White;
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.ForeColor = Color.FromArgb(99, 57, 116);
-            button9.Location = new Point(250, 433);
-            button9.Margin = new Padding(3, 4, 3, 4);
-            button9.Name = "button9";
-            button9.Size = new Size(207, 51);
-            button9.TabIndex = 88;
-            button9.Text = "REMOVE FLIGHT";
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
             // 
             // CancelFlight
             // 

@@ -37,7 +37,7 @@ namespace SE3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
+            UserProfile form8 = new UserProfile();
             form8.Show();
         }
 
@@ -62,6 +62,9 @@ namespace SE3
 
         private void button8_Click(object sender, EventArgs e)
         {
+            string connectionString = "Server=localhost;Database=mydatabase;User ID=myusername;Password=mypassword;Pooling=false;";
+
+
             // Show a confirmation dialog
             DialogResult result = MessageBox.Show(
                 "Are you sure you want to proceed with the generating ticket?",
@@ -76,7 +79,7 @@ namespace SE3
                 // Proceed with Ticket Generation logic
                 MessageBox.Show("Generating Ticket!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Form15 form15 = new Form15();
+                TicketForm form15 = new TicketForm();
                 form15.Show();
             }
             else

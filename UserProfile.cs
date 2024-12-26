@@ -10,55 +10,49 @@ using System.Windows.Forms;
 
 namespace SE3
 {
-    public partial class Form13 : Form
+    public partial class UserProfile : Form
     {
-        public Form13()
+        public UserProfile()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form13 form13 = new Form13();
-            form13.Show();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            FlightsSchedule form10 = new FlightsSchedule();
-            form10.Show();
+            SearchFlight form5 = new SearchFlight();
+            form5.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddFlightForm form11 = new AddFlightForm();
-            form11.Show();
+            BookTicket form6 = new BookTicket();
+            form6.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            PassengerBookingList form12 = new PassengerBookingList();
-            form12.Show();
+            BookingHistory form7 = new BookingHistory();
+            form7.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            NewAdminForm form14 = new NewAdminForm();
-            form14.Show();
+            UserProfile form8 = new UserProfile();
+            form8.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AdminLogin form2 = new AdminLogin();
-            form2.Show();
+            LoginForm form1 = new LoginForm();
+            form1.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Are you sure you want to exit?",
-                                      "Exit Application",
-                                      MessageBoxButtons.YesNo,
-                                      MessageBoxIcon.Question);
+                                     "Exit Application",
+                                     MessageBoxButtons.YesNo,
+                                     MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {

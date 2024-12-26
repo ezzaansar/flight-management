@@ -40,11 +40,7 @@ namespace SE3
             form12.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            NewAdminForm form14 = new NewAdminForm();
-            form14.Show();
-        }
+       
 
         private void button8_Click(object sender, EventArgs e)
         {

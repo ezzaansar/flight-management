@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SE3
 {
-    public partial class Form15 : Form
+    public partial class TicketForm : Form
     {
-        public Form15()
+        public TicketForm()
         {
             InitializeComponent();
         }

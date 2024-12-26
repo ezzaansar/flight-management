@@ -39,13 +39,13 @@
             button2 = new Button();
             button1 = new Button();
             panel4 = new Panel();
+            avaiableseat = new TextBox();
+            priceperseat = new TextBox();
+            totalseats = new TextBox();
             label19 = new Label();
             pictureBox3 = new PictureBox();
-            button8 = new Button();
-            label11 = new Label();
+            search = new Button();
             label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
             dateTimePicker2 = new DateTimePicker();
             comboBox2 = new ComboBox();
             comboBox1 = new ComboBox();
@@ -198,13 +198,13 @@
             panel4.AutoScroll = true;
             panel4.AutoScrollMargin = new Size(0, 50);
             panel4.BackColor = Color.FromArgb(20, 143, 119);
+            panel4.Controls.Add(avaiableseat);
+            panel4.Controls.Add(priceperseat);
+            panel4.Controls.Add(totalseats);
             panel4.Controls.Add(label19);
             panel4.Controls.Add(pictureBox3);
-            panel4.Controls.Add(button8);
-            panel4.Controls.Add(label11);
+            panel4.Controls.Add(search);
             panel4.Controls.Add(label10);
-            panel4.Controls.Add(label9);
-            panel4.Controls.Add(label8);
             panel4.Controls.Add(dateTimePicker2);
             panel4.Controls.Add(comboBox2);
             panel4.Controls.Add(comboBox1);
@@ -219,6 +219,27 @@
             panel4.Size = new Size(702, 596);
             panel4.TabIndex = 6;
             panel4.Paint += panel4_Paint;
+            // 
+            // avaiableseat
+            // 
+            avaiableseat.Location = new Point(330, 803);
+            avaiableseat.Name = "avaiableseat";
+            avaiableseat.Size = new Size(294, 27);
+            avaiableseat.TabIndex = 92;
+            // 
+            // priceperseat
+            // 
+            priceperseat.Location = new Point(330, 703);
+            priceperseat.Name = "priceperseat";
+            priceperseat.Size = new Size(294, 27);
+            priceperseat.TabIndex = 91;
+            // 
+            // totalseats
+            // 
+            totalseats.Location = new Point(330, 604);
+            totalseats.Name = "totalseats";
+            totalseats.Size = new Size(294, 27);
+            totalseats.TabIndex = 90;
             // 
             // label19
             // 
@@ -244,33 +265,21 @@
             pictureBox3.TabIndex = 89;
             pictureBox3.TabStop = false;
             // 
-            // button8
+            // search
             // 
-            button8.BackColor = Color.White;
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.ForeColor = Color.FromArgb(20, 143, 119);
-            button8.Location = new Point(241, 913);
-            button8.Margin = new Padding(3, 4, 3, 4);
-            button8.Name = "button8";
-            button8.Size = new Size(197, 51);
-            button8.TabIndex = 87;
-            button8.Text = "SEARCH";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
-            // 
-            // label11
-            // 
-            label11.BackColor = Color.White;
-            label11.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(20, 143, 119);
-            label11.Location = new Point(330, 803);
-            label11.Name = "label11";
-            label11.Padding = new Padding(134, 0, 0, 0);
-            label11.Size = new Size(295, 33);
-            label11.TabIndex = 68;
-            label11.Text = "0";
+            search.BackColor = Color.White;
+            search.FlatAppearance.BorderSize = 0;
+            search.FlatStyle = FlatStyle.Flat;
+            search.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            search.ForeColor = Color.FromArgb(20, 143, 119);
+            search.Location = new Point(241, 913);
+            search.Margin = new Padding(3, 4, 3, 4);
+            search.Name = "search";
+            search.Size = new Size(197, 51);
+            search.TabIndex = 87;
+            search.Text = "SEARCH";
+            search.UseVisualStyleBackColor = false;
+            search.Click += button8_Click;
             // 
             // label10
             // 
@@ -283,30 +292,6 @@
             label10.Size = new Size(184, 32);
             label10.TabIndex = 67;
             label10.Text = "PRICE PER SEAT";
-            // 
-            // label9
-            // 
-            label9.BackColor = Color.White;
-            label9.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.FromArgb(20, 143, 119);
-            label9.Location = new Point(330, 703);
-            label9.Name = "label9";
-            label9.Padding = new Padding(134, 0, 0, 0);
-            label9.Size = new Size(295, 33);
-            label9.TabIndex = 66;
-            label9.Text = "0";
-            // 
-            // label8
-            // 
-            label8.BackColor = Color.White;
-            label8.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.FromArgb(20, 143, 119);
-            label8.Location = new Point(330, 604);
-            label8.Name = "label8";
-            label8.Padding = new Padding(134, 0, 0, 0);
-            label8.Size = new Size(295, 33);
-            label8.TabIndex = 65;
-            label8.Text = "0";
             // 
             // dateTimePicker2
             // 
@@ -458,12 +443,12 @@
         private ComboBox comboBox2;
         private ComboBox comboBox1;
         private DateTimePicker dateTimePicker2;
-        private Label label8;
-        private Label label9;
-        private Label label11;
         private Label label10;
-        private Button button8;
+        private Button search;
         private Label label19;
         private PictureBox pictureBox3;
+        private TextBox avaiableseat;
+        private TextBox priceperseat;
+        private TextBox totalseats;
     }
 }

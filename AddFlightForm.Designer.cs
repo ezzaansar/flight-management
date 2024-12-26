@@ -34,7 +34,6 @@
             label1 = new Label();
             panel2 = new Panel();
             button4 = new Button();
-            button7 = new Button();
             button6 = new Button();
             button5 = new Button();
             button3 = new Button();
@@ -109,7 +108,6 @@
             // 
             panel2.BackColor = Color.FromArgb(81, 90, 90);
             panel2.Controls.Add(button4);
-            panel2.Controls.Add(button7);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(button3);
@@ -135,21 +133,6 @@
             button4.Text = "CANCEL FLIGHTS";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click_1;
-            // 
-            // button7
-            // 
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(0, 389);
-            button7.Margin = new Padding(3, 4, 3, 4);
-            button7.Name = "button7";
-            button7.Size = new Size(229, 80);
-            button7.TabIndex = 6;
-            button7.Text = "ADD ADMIN";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
             // 
             // button6
             // 

@@ -62,7 +62,7 @@ namespace SE3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
+            UserProfile form8 = new UserProfile();
             form8.Show();
         }
 

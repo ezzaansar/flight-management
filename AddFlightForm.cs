@@ -18,12 +18,6 @@ namespace SE3
             InitializeComponent();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            NewAdminForm form14 = new NewAdminForm();
-            form14.Show();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             FlightsSchedule form10 = new FlightsSchedule();
@@ -42,11 +36,8 @@ namespace SE3
             form12.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form13 form13 = new Form13();
-            form13.Show();
-        }
+        
+        
 
         private void button5_Click(object sender, EventArgs e)
         {

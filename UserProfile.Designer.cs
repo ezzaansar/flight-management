@@ -1,6 +1,6 @@
 ﻿namespace SE3
 {
-    partial class Form13
+    partial class UserProfile
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,6 @@
             panel1 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
-            button7 = new Button();
             button6 = new Button();
             button5 = new Button();
             button4 = new Button();
@@ -52,7 +51,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(200, 80);
-            panel3.TabIndex = 4;
+            panel3.TabIndex = 6;
             // 
             // label2
             // 
@@ -67,28 +66,27 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(99, 57, 116);
+            panel1.BackColor = Color.FromArgb(20, 143, 119);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(200, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(946, 80);
-            panel1.TabIndex = 6;
+            panel1.TabIndex = 7;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(318, 24);
+            label1.Location = new Point(321, 24);
             label1.Name = "label1";
-            label1.Size = new Size(191, 32);
+            label1.Size = new Size(168, 32);
             label1.TabIndex = 0;
-            label1.Text = "ADMIN PROFILE";
+            label1.Text = "USER PROFILE";
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(81, 90, 90);
-            panel2.Controls.Add(button7);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(button4);
@@ -98,21 +96,7 @@
             panel2.Location = new Point(0, 80);
             panel2.Name = "panel2";
             panel2.Size = new Size(200, 520);
-            panel2.TabIndex = 7;
-            // 
-            // button7
-            // 
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(0, 292);
-            button7.Name = "button7";
-            button7.Size = new Size(200, 60);
-            button7.TabIndex = 6;
-            button7.Text = "ADD ADMIN";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
+            panel2.TabIndex = 8;
             // 
             // button6
             // 
@@ -149,11 +133,11 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(0, 226);
+            button4.Location = new Point(0, 230);
             button4.Name = "button4";
             button4.Size = new Size(200, 60);
             button4.TabIndex = 3;
-            button4.Text = "ADMIN PROFILE";
+            button4.Text = "USER PROFILE";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -167,7 +151,7 @@
             button3.Name = "button3";
             button3.Size = new Size(200, 60);
             button3.TabIndex = 2;
-            button3.Text = "BOOKING LIST";
+            button3.Text = "BOOKING HISTORY";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -181,7 +165,7 @@
             button2.Name = "button2";
             button2.Size = new Size(200, 60);
             button2.TabIndex = 1;
-            button2.Text = "ADD FLIGHTS";
+            button2.Text = "BOOK TICKET";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -195,11 +179,11 @@
             button1.Name = "button1";
             button1.Size = new Size(200, 60);
             button1.TabIndex = 0;
-            button1.Text = "FLIGHT SCHEDULE";
+            button1.Text = "SEARCH FLIGHT";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Form13
+            // Form8
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -211,9 +195,9 @@
             Controls.Add(panel3);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form13";
+            Name = "Form8";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form13";
+            Text = "Form8";
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel1.ResumeLayout(false);
@@ -229,7 +213,6 @@
         private Panel panel1;
         private Label label1;
         private Panel panel2;
-        private Button button7;
         private Button button6;
         private Button button5;
         private Button button4;

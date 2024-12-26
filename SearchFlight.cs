@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
 
+
 namespace SE3
 {
     public partial class SearchFlight : Form
@@ -52,7 +53,7 @@ namespace SE3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
+            UserProfile form8 = new UserProfile();
             form8.Show();
         }
 
@@ -76,6 +77,11 @@ namespace SE3
         {
             DisplayFlight form17 = new DisplayFlight();
             form17.Show();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

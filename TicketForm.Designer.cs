@@ -1,6 +1,6 @@
 ﻿namespace SE3
 {
-    partial class Form8
+    partial class TicketForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel3 = new Panel();
-            label2 = new Label();
             panel1 = new Panel();
             label1 = new Label();
+            panel3 = new Panel();
+            label2 = new Label();
             panel2 = new Panel();
             button6 = new Button();
             button5 = new Button();
-            button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            panel3.SuspendLayout();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(20, 143, 119);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(9460, 80);
+            panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(528, 24);
+            label1.Name = "label1";
+            label1.Size = new Size(163, 32);
+            label1.TabIndex = 0;
+            label1.Text = "TICKET FORM";
             // 
             // panel3
             // 
@@ -51,7 +70,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(200, 80);
-            panel3.TabIndex = 6;
+            panel3.TabIndex = 7;
             // 
             // label2
             // 
@@ -64,32 +83,11 @@
             label2.TabIndex = 0;
             label2.Text = "UFE AIRLINES";
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(20, 143, 119);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(200, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(946, 80);
-            panel1.TabIndex = 7;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(321, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(168, 32);
-            label1.TabIndex = 0;
-            label1.Text = "USER PROFILE";
-            // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(81, 90, 90);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
             panel2.Controls.Add(button1);
@@ -125,21 +123,6 @@
             button5.Text = "BACK TO LOGIN";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
-            // 
-            // button4
-            // 
-            button4.Enabled = false;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(0, 230);
-            button4.Name = "button4";
-            button4.Size = new Size(200, 60);
-            button4.TabIndex = 3;
-            button4.Text = "USER PROFILE";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -183,7 +166,7 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Form8
+            // Form15
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -191,31 +174,30 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1000, 600);
             Controls.Add(panel2);
-            Controls.Add(panel1);
             Controls.Add(panel3);
+            Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form8";
+            Name = "Form15";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form8";
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            Text = "Form15";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel3;
-        private Label label2;
         private Panel panel1;
         private Label label1;
+        private Panel panel3;
+        private Label label2;
         private Panel panel2;
         private Button button6;
         private Button button5;
-        private Button button4;
         private Button button3;
         private Button button2;
         private Button button1;
